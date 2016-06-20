@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
@@ -20,36 +20,81 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-  </head>
+</head>
 
-  <body ng-app="starter" ng-controller="HomeTabCtrl">
-    <ion-pane>
+<body ng-app="shop" ng-controller="viewShop">
+<ion-pane>
 
-      <ion-header-bar style="height: 100px";>
+    <ion-header-bar style="height: auto" ;>
 
         <div class="header_box_top">
-          <div class="title_icon">title_icon</div>
-          <h1 class="title">Title!</h1>
+            <div class="section_top">
+                <div class="title_icon">title_icon</div>
+                <h1 class="title">Title!</h1>
+            </div>
+
+            <div class="section_bottom">
+                <div class="header_box">
+                    <div class="title_box_text">transction</div>
+                    <div class="title_box_money">300,000</div>
+                </div>
+                <div class="header_box">
+                    <div class="title_box_text">product</div>
+                    <div class="title_box_money">20</div>
+                </div>
+                <div class="header_box">
+                    <div class="title_box_text">following</div>
+                    <div class="title_box_money">2,000,000</div>
+                </div>
+            </div>
+
         </div>
-        <div class="header_box_bottom">
-          <div class="header_box">
-            <div class="title_box_text"></div>
-            <div class="title_box_text"></div>
-          </div>
+
+        <div class="header_box_bottom ">
+            <div class="tabs-top tabs-striped tabs-color-dark">
+                <div class="tabs">
+                    <a ng-click="tabsClick(1)" class="tab-item {{btnTabActive_1}}" href="">Product </a>
+                    <a ng-click="tabsClick(2)" class="tab-item {{btnTabActive_2}}" href="">Inbox <span class="notify">12</span></a>
+                    <a ng-click="tabsClick(3)" class="tab-item {{btnTabActive_3}}" href="">Message</a>
+                </div>
+            </div>
         </div>
 
 
-      </ion-header-bar>
+    </ion-header-bar>
 
-      <ion-content class="has-header" style="margin-top: 50px">
+    <ion-content class="has-header" style="margin-top: 100px">
 
-        <ul>
-          <li class="list">dsds</li>
-          <li class="list">dsds</li>
-        </ul>
+        <div class="content_tab_1" ng-hide="content_tab_1">
+            <div class="list" ng-hide="content_list">
+                <div class="item"><a href="">sssssssss</a></div>
+                <div class="item"><a href="">sssssssss</a></div>
+                <div class="item"><a href="">sssssssss</a></div>
+                <div class="item"><a href="">sssssssss</a></div>
+            </div>
+            <div class="is_non_product" ng-hide="is_non_product">
+                <img class=" " src="" alt="">
+                You haven't create any post yet,tab plus button on top button of the page to create new post.
+            </div>
+        </div>
+        <div class="content_tab_2" ng-hide="content_tab_2">
+            //....
+            content_tab_2
+        </div>
+        <div class="content_tab_3" ng-hide="content_tab_3">
+            //...
+            content_tab_3
+        </div>
 
 
-      </ion-content>
-    </ion-pane>
-  </body>
+
+
+    </ion-content>
+    <ion-footer-bar >
+
+        <div class="float_botton">+</div>
+
+    </ion-footer-bar>
+</ion-pane>
+</body>
 </html>
