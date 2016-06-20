@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0001",
+    "name": "Jacket",
+    "like": 500,
+    "look": 500,
+    "point":360,
+    "price":300000
+  },
+  {
+    "id": "0001",
+    "name": "Jacket",
+    "like": 500,
+    "look": 500,
+    "point":360,
+    "price":300000
+  },
+  {
+    "id": "0001",
+    "name": "Jacket",
+    "like": 500,
+    "look": 500,
+    "point":360,
+    "price":300000
+  },
+  {
+    "id": "0001",
+    "name": "Jacket",
+    "like": 500,
+    "look": 500,
+    "point":360,
+    "price":300000
+  },
+  {
+    "id": "0001",
+    "name": "Jacket",
+    "like": 500,
+    "look": 500,
+    "point":360,
+    "price":300000
+  }
+]

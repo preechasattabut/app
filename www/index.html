@@ -66,11 +66,28 @@
     <ion-content class="has-header" style="margin-top: 100px">
 
         <div class="content_tab_1" ng-hide="content_tab_1">
-            <div class="list" ng-hide="content_list">
-                <a class="item" href="">sssssssss</a>
-                <a class="item" href="">sssssssss</a>
-                <a class="item" href="">sssssssss</a>
-                <a class="item" href="">sssssssss</a>
+            <div class="list"  ng-hide="content_list" >
+                <div ng-repeat="values in feed" class="item" href="">
+                    <div class="list_box_img">
+                        <img src="" alt="" width="100%" height="300px" style="background-color: #0a5471">
+                    </div>
+                    <div class="list_box_footer">
+                        <p>Look at this delicious dessert</p>
+                        <span>{{values.look}}</span>
+                        <span>{{values.like}}</span>
+                        <div class="list_box_footer_buttom">
+                            <div>
+                                price
+                                {{values.price}}
+                            </div>
+                            <div>
+                                point
+                                {{values.point}}
+                            </div>
+                            <a href="">more detail</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="is_non_product" ng-hide="is_non_product">
                 <img class=" " src="" alt="">

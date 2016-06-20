@@ -14,12 +14,29 @@ angular.module('shop', ['ionic'])
     })
 
 
-    .controller('viewShop', function ($scope) {
+    .controller('viewShop', function ($scope, $http, $location) {
+
+        var makeDataProduct;
+        /*$http.get('../content/content.json')
+            .success(function (data) {
+                // The json data will now be in scope.
+                makeDataProduct = data;
+                //$scope.myJsonData = data.rss.channel.item[0].title.__cdata;
+            });
+        //$scope.feed = makeDataProduct;*/
+
+        $scope.feed = [
+                {id: 1,name:"Jacket",like:500,look:500,point:360,price:300000},
+                {id: 2,name:"Jacket",like:500,look:500,point:360,price:300000},
+                {id: 3,name:"Jacket",like:500,look:500,point:360,price:300000},
+                {id: 4,name:"Jacket",like:500,look:500,point:360,price:300000},
+                {id: 5,name:"Jacket",like:500,look:500,point:360,price:300000},
+                {id: 6,name:"Jacket",like:500,look:500,point:360,price:300000}
+            ]
         // PRODUCT
-        var makeDataProduct = [
-        ];
-        var isList = makeDataProduct.length; // if have list product
-        if (isList == 0) {
+        console.log(makeDataProduct);
+        var isList =false; // if have list product
+        if (isList) {
             $scope.content_list = true;
             $scope.is_non_product = false;
         } else {
